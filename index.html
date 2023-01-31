@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desafio 4</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- import google icon font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  <!--compiled and minified css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- miniatura -->
+  <link rel="shortcut icon" href="imagenes/miniatura.png" type="image/x-icon" class="miniatura">
+  <!-- icon -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"> </script>
+
+</head>
+
+
+<body>
+  <!-- navbar -->
+  <header>
+    <Nav>
+      <div class="nav1">
+        <img src="imagenes/logo.png" alt="logo" class="image" />
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </div>
+
+    </Nav>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Nuestros productos</a></li>
+          <li><a href="#">Marcas</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <a class="waves-effect waves-light btn"><i class="material-icons left">how_to_reg</i>Registrarme</a>
+          <a class="waves-effect waves-light btn"><i class="material-icons left">perm_identity</i>Iniciar sesion</a>
+          <a class="waves-effect waves-light btn"><i class="material-icons right">shopping_cart</i>Mi carrito</a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- cards -->
+  <main>
+    <section class="container">
+      <div class="row">
+        <div class="col l4 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes/cards1.jpg">
+              <span class="card-title">ZAPATILLAS</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <p>Gran variedad de marcas y modelos</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- cards 2 -->
+        <div class="col l4 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes/cardss2.jpg">
+              <span class="card-title">ZAPATOS</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <p>Amplia variedad en tacos, sandalias, borcegos y mucho mas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- cards 3 -->
+
+        <div class="col l4 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes/cardss3.jpg">
+              <span class="card-title">ACCESORIOS</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <p>Gorros, cintos, billeteras, carteras, mochilas y mucho mas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!--GALERIA-->
+
+  <div class="conteiner">
+    <h2 class="header">Nuestros productos</h2>
+    <div class="linea"></div>
+    <div class="row">
+      <div class="col s12 m6 l4"><img alt="" class="card responsive-img materialboxed" src="imagenes/ZAPATILLA1.png">
+      </div>
+      <div class="col s12 m6 l4"><img alt="" class="card responsive-img materialboxed" src="imagenes/ZAPATILLA2.png">
+      </div>
+      <div class="col s12 m6 l4"><img alt="" class="card responsive-img materialboxed" src="imagenes/ZAPATILLA3.png">
+      </div>
+      <div class="col s12 m6 l4"><img alt="" class="card responsive-img materialboxed" src="imagenes/ZAPATILLA4.png">
+      </div>
+      <div class="col s12 m6 l4"><img alt="" class="card responsive-img materialboxed" src="imagenes/ZAPATILLA5.png">
+      </div>
+      <div class="col s12 m6 l4"><img alt="" class="card responsive-img materialboxed" src="imagenes/ZAPATILLA6.png">
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.materialboxed').materialbox();
+    });
+  </script>
+
+
+
+
+  <section class="intro">
+    <h2>Formulario de contacto</h2>
+    <h4>Escríbenos y en breve los pondremos en contacto contigo</h4>
+  </section>
+  <!-- fprmulario -->
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">Nombre</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Apellido</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+          <label for="disabled">Telefono</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password"> Asunto </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          Deje aqui su mensaje
+          <div class="input-field inline">
+            <input id="email_inline" type="email" class="validate">
+            <label for="email_inline">mensaje</label>
+            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+  <!-- footer -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Sobre nosotros</h5>
+          <p class="grey-text text-lighten-4">Somos una empresa que se dedica a la venta por mayor y menor de zapatos,
+            zapatillas y accesorios.
+            Contamos con una amplia variedad de marcas y modelos. </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Nuestras redes sociales </h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/">Siguenos en Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://twitter.com/login?lang=es">Siguenos en Twitter</a>
+            </li>
+            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/rocio_gonzalez229/">Siguenos en
+                Instagram</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://goo.gl/maps/whh2wSMvdveSNk5Y8">NUESTRO LOCAL </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="https://walink.co/29fd86">COMUNICATE CON NOSOTROS VIA WHATSAPP</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
